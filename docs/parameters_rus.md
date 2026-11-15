@@ -330,7 +330,7 @@ set Flash Attention use ('on', 'off', or 'auto', default: 'auto')<br>
 Включение/отключение Flash Attention. FA это более эффективный метод вычисления Attention. Работает быстрее, потребляет меньше памяти (особенно на больших контекстах), но может дать чуть другой результат (как лучше, так и хуже, в большинстве случаев различия не заметны).<br>
 Еще, "--flash-attn" нужно включать, если при инференсе модели используется квантование кэша V ("--cache-type-v"); также желательно его включать (но не обязательно), если используется квантование кэша K ("--cache-type-k"). О квантовании кеша KV ("--cache-type-k" и "--cache-type-v") смотрите ниже.
 
-По умолчанию: "-flash-attn auto" (автовыбор).
+По умолчанию: "--flash-attn auto" (автовыбор).
 
 env: LLAMA_ARG_FLASH_ATTN - переменная окружения в ОС, в ней можно указать значение этого параметра для текущей сессии.
 
@@ -393,8 +393,7 @@ hello<br>
 world<br>
 
 Если выбрать "--no-escape", то escape-последовательности будут передаваться как текст.<br>
-Например: "-p "hello\\nworld"", так и останется в виде текста:<br>
-hello\\nworld
+Например: "-p "hello\\nworld"", так и останется в виде текста: "hello\\nworld".
 
 По умолчанию: включено.
 <br>
@@ -531,7 +530,7 @@ YaRN: high correction dim or alpha<br>
 \[Ремарка: описание работы параметра может быть не точным\]
 
 Порог для низкочастотных измерений позиционного кодирования, которые отвечают за дальние связи в тексте. Измерения ниже этого порога YaRN полностью сжимает, как при linear scaling. Чем больше значение, тем больше измерений будет сжато.<br>
-Примерный диапазон значений 1–32. Рекомендуется оставлять автоматический режим (-1).
+Примерный диапазон значений 1-32. Рекомендуется оставлять автоматический режим (-1).
 
 По умолчанию: "--yarn-beta-slow -1" (вычисляется автоматически).
 
@@ -548,7 +547,7 @@ YaRN: low correction dim or beta<br>
 \[Ремарка: описание работы параметра может быть не точным\]
 
 Порог для высокочастотных измерений позиционного кодирования, которые отвечают за точное различение соседних токенов. Измерения выше этого порога YaRN не трогает, локальная точность сохраняется. Чем меньше значение, тем больше измерений останется нетронутыми.<br>
-Примерный диапазон значений 1–32. Рекомендуется оставлять автоматический режим (-1).
+Примерный диапазон значений 1-32. Рекомендуется оставлять автоматический режим (-1).
 
 По умолчанию: "--yarn-beta-fast -1" (вычисляется автоматически).
 
@@ -1021,10 +1020,9 @@ check model tensor data for invalid values<br>
 <br>
 
 **--override-kv KEY=TYPE:VALUE,...**<br>
-advanced option to override model metadata by key. to specify multiple<br>
-overrides, either use comma-separated values.<br>
-types: int, float, bool, str. example: --override-kv<br>
-tokenizer.ggml.add_bos_token=bool:false,tokenizer.ggml.add_eos_token=bool:false<br>
+advanced option to override model metadata by key. to specify multiple overrides.<br>
+either use comma-separated values. types: int, float, bool, str.<br>
+example: --override-kvtokenizer.ggml.add_bos_token=bool:false,tokenizer.ggml.add_eos_token=bool:false<br>
 
 Комментарий:<br>
 Переопределяет метаданные модели без изменения исходного файла GGUF.<br>
