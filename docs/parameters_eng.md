@@ -17,7 +17,7 @@ For example, you can check whether the current build supports CUDA.
 <br>
 <br>
 
-**--license**  (в новых версиях параметр отсутствует)<br>
+**--license** (the parameter is absent in newer versions)<br>
 show source code license and dependencies
 
 Description:<br>
@@ -1191,7 +1191,7 @@ env: LLAMA_ARG_HF_FILE - an environment variable that can be set in the OS to sp
 <br>
 <br>
 
-**-hfv,  -hfrv, --hf-repo-v \<user\>\/\<model\>\[:quant\]** (в новых версиях параметр отсутствует)<br>
+**-hfv,  -hfrv, --hf-repo-v \<user\>\/\<model\>\[:quant\]** (the parameter is absent in newer versions)<br>
 Hugging Face model repository for the vocoder model<br>
 (default: unused)<br>
 (env: LLAMA_ARG_HF_REPO_V)
@@ -1207,7 +1207,7 @@ env: LLAMA_ARG_HF_REPO_V - an environment variable that can be set in the OS to 
 <br>
 <br>
 
-**-hffv, --hf-file-v FILE**  (в новых версиях параметр отсутствует)<br>
+**-hffv, --hf-file-v FILE** (the parameter is absent in newer versions)<br>
 Hugging Face model file for the vocoder model<br>
 (default: unused)<br>
 (env: LLAMA_ARG_HF_FILE_V)
