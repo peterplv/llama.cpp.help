@@ -1,3 +1,20 @@
+
+**Disclaimer**:
+<br>
+This is not a **llama.cpp** manual. It provides a brief overview of the main commands and parameters of **llama.cpp**: how they work, what they are used for, their possible values, and usage examples. It is not a comprehensive guide to all **llama.cpp** features and workflows. This reference is provided "as is", makes no claim to be fully complete or entirely accurate, and is intended only to help both beginners and experienced users. It is recommended for anyone working with local LLMs in **llama.cpp** (including **llama-cli**, **llama-completion**, and **llama-server**).
+<br>
+
+Last validation date: **18.11.2026**.
+
+Last used version of **llama.cpp**:
+
+```bash
+llama version
+version: 0.8.0-dev (build 12014, commit aa588a346)
+built with GNU 11.4.0 for Linux x86_64
+```
+<br>
+
 ### ----- common params -----
 
 **-h,    --help, --usage**<br>
