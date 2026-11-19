@@ -1,7 +1,7 @@
 
 **Disclaimer**:
 <br>
-This is not a **llama.cpp** manual. It provides a brief overview of the main commands and parameters of **llama.cpp**: how they work, what they are used for, their possible values, and usage examples. It is not a comprehensive guide to all **llama.cpp** features and workflows. This reference is provided "as is", makes no claim to be fully complete or entirely accurate, and is intended only to help both beginners and experienced users. It is recommended for anyone working with local LLMs in **llama.cpp** (including **llama-cli**, **llama-completion**, and **llama-server**).
+This is not a **llama.cpp** manual. It provides a brief overview of the main commands and parameters of **llama.cpp**: how they work, what they are used for, their possible values, and usage examples. It is not a comprehensive guide to all **llama.cpp** features and workflows. This reference is provided "as is", makes no claim to be fully complete or entirely accurate, and is intended only to help both beginners and experienced users. It is recommended for anyone working with local LLMs in **llama.cpp** (including **llama-cli**, **llama-completion**, and **llama-server**). The reference was prepared with extensive use of AI and a study of the source code. Descriptions whose accuracy is not fully certain are marked with a note.
 <br>
 
 Last validation date: **18.11.2026**.
